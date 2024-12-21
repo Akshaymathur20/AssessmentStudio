@@ -4,7 +4,7 @@ import AddStudentModal from "../components/AddStudentModal";
 import Filters from "../components/Filters";
 import StudentTable from "../components/StudentTable";
 
-const MainSection = () => {
+const StudentSection = () => {
   const [students, setStudents] = useState([]);
   const [filteredStudents, setFilteredStudents] = useState([]);
   const [academicYear, setAcademicYear] = useState("");
@@ -99,4 +99,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default StudentSection;
