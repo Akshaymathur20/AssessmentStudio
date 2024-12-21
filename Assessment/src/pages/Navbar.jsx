@@ -16,7 +16,7 @@ const Navbar = () => {
       <img
           src={SearchIcon}
           alt="Search Icon"
-          className="w-5 h-5 mr-3" // Adjust size and spacing as needed
+          className="w-5 h-5 mr-3" 
         />
         <input
           
@@ -28,7 +28,6 @@ const Navbar = () => {
 
       {/* Notification Icons and User Info */}
       <div className="flex items-center space-x-12">
-        {/* Message Icon */}
         <img
           src={HelpIcon}
           alt="Help"
@@ -39,8 +38,6 @@ const Navbar = () => {
           alt="Message"
           className="w-5 h-5 cursor-pointer"
         />
-
-        {/* Notification Icon */}
         <img
           src={VectorIcon}
           alt="Vector"

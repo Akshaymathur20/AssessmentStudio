@@ -18,7 +18,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="fixed left-0 top-0 w-[248px] h-full bg-gray-100 p-4 shadow-lg">
+    <div className="fixed left-0 top-0 w-[248px] h-full bg-white p-4 shadow-lg">
       {/* Logo Section */}
       <div className="mb-14 mt-4 ml-2 flex">
         <img src={Logo} alt="Logo" className="w-20 h-auto" />
