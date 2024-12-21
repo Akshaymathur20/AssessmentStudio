@@ -26,4 +26,4 @@ dist-ssr
 .env
 # src/createClient.jsx
 
-src/supabase/createClient.jsx
+src/supaabase/createClient.jsx
