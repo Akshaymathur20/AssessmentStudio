@@ -44,18 +44,27 @@ const AddStudentModal = ({
 
           {/* Courses Selection */}
           <div className="mb-4">
-            <label className="block text-sm font-medium">Courses</label>
-            {coursesList.map((course) => (
-              <div key={course.value} className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={newStudent.courses.includes(course.value)}
-                  onChange={() => onCourseSelection(course.value)}
-                />
-                <span>{course.label}</span>
-              </div>
-            ))}
-          </div>
+  <label className="block text-sm font-medium">Courses</label>
+  {coursesList.map((course) => (
+    <div key={course.value} className="flex items-center gap-2">
+      <input
+        type="checkbox"
+        checked={newStudent.courses.includes(course.value)}
+        onChange={() => onCourseSelection(course.value)}
+        className="cursor-pointer"
+      />
+      <div className="flex items-center gap-2">
+        <img
+          src={course.icon}
+          alt={course.label}
+          className="w-5 h-5"
+        />
+        <span>{course.label}</span>
+      </div>
+    </div>
+  ))}
+</div>
+
 
           {/* Date Joined Input */}
           <div className="mb-4">
