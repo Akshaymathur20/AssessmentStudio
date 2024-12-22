@@ -1,6 +1,8 @@
 import React from "react";
 
 const StudentRow = ({ student, isFirstRow }) => {
+
+  
   return (
     <>
       {!isFirstRow && (

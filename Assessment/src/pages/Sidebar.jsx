@@ -37,7 +37,7 @@ const Sidebar = ({ onMenuClick, isSidebarOpen, toggleSidebar, selectedMenu }) =>
       ${isSidebarOpen ? 'w-[260px]' : 'w-0 overflow-hidden'}`}
     >
       {/* Logo Section */}
-      <div className="mb-14 mt-4 ml-2 flex">
+      <div className="mb-9 mt-4 ml-1 flex">
         <img src={Logo} alt="Logo" className="w-20 h-auto" />
       </div>
 
@@ -47,7 +47,7 @@ const Sidebar = ({ onMenuClick, isSidebarOpen, toggleSidebar, selectedMenu }) =>
           <li
             key={index}
             onClick={() => handleClick(item.name)}
-            className={`flex items-center gap-4 p-2 rounded-lg cursor-pointer 
+            className={`flex items-center gap-4 p-2 ml rounded-lg cursor-pointer 
               ${activeMenu === item.name ? 'bg-gray-200' : 'hover:bg-gray-200'}`}
           >
             <img src={item.icon} alt={item.name} className="w-6 h-6" />
