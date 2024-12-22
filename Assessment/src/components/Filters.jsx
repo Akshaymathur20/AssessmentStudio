@@ -7,7 +7,7 @@ const Filters = ({ academicYear, classes, coursesList, onYearChange, onClassChan
       <select
         value={academicYear}
         onChange={onYearChange}
-        className="pr-4 pl-5 border rounded-md bg-gray-300 cursor-pointer"
+        className="pr-4 pl-5 border rounded-md bg-gray-300 cursor-pointer  font-semibold"
       >
         <option value="">AY 2024-25</option>
         <option value="2023">AY 2023-24</option>
@@ -19,7 +19,7 @@ const Filters = ({ academicYear, classes, coursesList, onYearChange, onClassChan
       <select
         value={classes}
         onChange={onClassChange}
-        className="p-2 pr-4 pl-2 border rounded-md bg-gray-300 cursor-pointer"
+        className="p-2 pr-2 pl-3 border rounded-md bg-gray-300 cursor-pointer  font-semibold"
       >
         <option value="">CBSE 9</option>
         {coursesList.map((course) => (

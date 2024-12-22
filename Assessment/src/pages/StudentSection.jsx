@@ -80,9 +80,9 @@ const StudentSection = () => {
         />
         <button
           onClick={() => setIsModalOpen(true)}
-          className="border rounded-md bg-gray-300 px-4 py-2 cursor-pointer"
+          className="border rounded-md bg-gray-300 px-6 py-2 cursor-pointer font-semibold "
         >
-          + Add Student
+          <span className="mr-4 text-lg ">+</span>    Add Student
         </button>
       </div>
       <StudentTable students={filteredStudents} />
