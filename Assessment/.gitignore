@@ -24,6 +24,4 @@ dist-ssr
 *.sw?
 .env.local
 .env
-# src/createClient.jsx
 
-src/supaabase/createClient.jsx
