@@ -5,11 +5,10 @@ import ChaptersIcon from '../assets/icons/chapters.svg';
 import HelpIcon from '../assets/icons/help.svg';
 import ReportsIcon from '../assets/icons/Report.svg';
 import SettingsIcon from '../assets/icons/setting.svg';
-import Logo from '../assets/logo.png'; // Import the logo
+import Logo from '../assets/logo.png'; 
 
 const Sidebar = ({ onMenuClick, isSidebarOpen, toggleSidebar, selectedMenu }) => {
-  const [activeMenu, setActiveMenu] = useState(selectedMenu || 'Students'); // Set default to 'Students' if no selectedMenu is passed
-
+  const [activeMenu, setActiveMenu] = useState(selectedMenu || 'Students'); 
   const menuItems = [
     { name: 'Dashboard', icon: DashboardIcon },
     { name: 'Students', icon: StudentsIcon },
@@ -20,8 +19,8 @@ const Sidebar = ({ onMenuClick, isSidebarOpen, toggleSidebar, selectedMenu }) =>
   ];
 
   const handleClick = (name) => {
-    setActiveMenu(name); // Set the active menu when clicked
-    onMenuClick(name); // Pass the selected menu item to the parent component
+    setActiveMenu(name); //--> Set the active menu when clicked
+    onMenuClick(name); //--> Pass the selected menu item to the parent component
   };
 
   useEffect(() => {
